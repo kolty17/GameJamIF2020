@@ -5,13 +5,15 @@ using UnityEngine;
 
 public class ScrNubeProbabilistica : MonoBehaviour
 {
-    float time;
+    public float time = 1;
     public float maxDimension = 7f;
     public float expansion = 0.02f;
+    public float lateralMove = 10f;
+    float position = 0;
     // Start is called before the first frame update
     void Start()
     {
-        time = 1;
+       
     }
 
     // Update is called once per frame
@@ -30,5 +32,31 @@ public class ScrNubeProbabilistica : MonoBehaviour
 
         transform.localScale = new Vector3(150 * time, 150 * time, 150 / time);
 
+        if (Input.GetKeyDown("z"))
+        {
+            if (position == 0)
+            {
+                transform.position = new Vector3(-7, transform.position.y, transform.position.z);
+                position = -1;
+            }
+            if (position == 1)
+            {
+                transform.position = new Vector3(0, transform.position.y, transform.position.z);
+                position = 0;
+            }
+        }
+        if (Input.GetKeyDown("c"))
+        {
+            if (position == 0)
+            {
+                transform.position = new Vector3(7, transform.position.y, transform.position.z);
+                position = 1;
+            }
+            if (position == -1)
+            {
+                transform.position = new Vector3(0, transform.position.y, transform.position.z);
+                position = 0;
+            }
+        }
     }
 }

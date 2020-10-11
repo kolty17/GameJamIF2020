@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6914699673486504699}
   - component: {fileID: 7519367757622885726}
   - component: {fileID: 5746274725893753236}
+  - component: {fileID: 1061520849741287277}
   m_Layer: 0
   m_Name: camera
   m_TagString: Untagged
@@ -83,18 +84,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &7132488709702388605
+--- !u!114 &1061520849741287277
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6106355646260880833}
+  m_GameObject: {fileID: 6106355645128927297}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e15617a6289d25b4a85e5055141f0952, type: 3}
+  m_Script: {fileID: 11500000, guid: 46f8e327446f459459923ea4fccfb850, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  smooth: 0.2
+  angoloInit: 90
+  range: 30
 --- !u!135 &5531419213078885416
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -108,6 +112,18 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.13499999
   m_Center: {x: 0.0049999724, y: 0.0049999426, z: 0.0050000213}
+--- !u!114 &7132488709702388605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6106355646260880833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e15617a6289d25b4a85e5055141f0952, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6376898930945923216
 PrefabInstance:
   m_ObjectHideFlags: 0
