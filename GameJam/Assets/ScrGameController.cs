@@ -14,6 +14,8 @@ public class ScrGameController : MonoBehaviour
     public Slider vel;
     public float delta = 0.4f;
     float time;
+    [System.NonSerialized]
+    public float diff;
     
     // Start is called before the first frame update
     void Start()
@@ -30,5 +32,6 @@ public class ScrGameController : MonoBehaviour
         minVel.value = vel.value - (delta / time);
         realVel.value = Random.Range(minVel.value, maxVel.value);
         character.GetComponent<ScrMomentum>().speed = realVel.value * 3;
+        diff = maxVel.value - minVel.value;
     }
 }

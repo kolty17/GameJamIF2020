@@ -7,7 +7,6 @@ using UnityEngine.UI;
 public class ScrHitLaser : MonoBehaviour
 {
     public float minVelocita;
-    public GameObject obj;
 
     // Start is called before the first frame update
     void Start()
@@ -24,10 +23,11 @@ public class ScrHitLaser : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            /*if ((maxVel.value - minVel.value) < minVelocita)
+            Debug.Log(other.gameObject.GetComponent<ScrGameController>().diff);
+            if (other.gameObject.GetComponent<ScrGameController>().diff < minVelocita)
             {
                 SceneManager.LoadScene("LvGameOver", LoadSceneMode.Single);
-            }*/
+            }
         }
     }
 
