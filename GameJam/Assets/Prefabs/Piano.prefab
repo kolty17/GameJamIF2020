@@ -105,7 +105,7 @@ GameObject:
   - component: {fileID: 8669234062110798311}
   - component: {fileID: 1138914469623608146}
   m_Layer: 0
-  m_Name: piano
+  m_Name: Piano
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -139,6 +139,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piano: {fileID: 1286551481049461046}
+  autovelox: {fileID: 8096784071496046602, guid: a144a587857fc184ca7b01645489f108,
+    type: 3}
+  tutor: {fileID: 7853158178432221999, guid: c4ffa45adf2f27c4ab435436fafc8381, type: 3}
+  muro: {fileID: 8744063810255361373, guid: ddaeb66357250ab409d647e4a5f859c9, type: 3}
+  fotocamera: {fileID: 6106355645128927297, guid: 8845a1e7a80e6a249997e967bd973697,
+    type: 3}
 --- !u!65 &1138914469623608146
 BoxCollider:
   m_ObjectHideFlags: 0

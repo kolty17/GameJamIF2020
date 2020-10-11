@@ -1,6 +1,5 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.UIElements;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -31,7 +30,7 @@ public class ScrGameController : MonoBehaviour
         maxVel.value = vel.value + (delta / time);
         minVel.value = vel.value - (delta / time);
         realVel.value = Random.Range(minVel.value, maxVel.value);
-        character.GetComponent<ScrMomentum>().speed = realVel.value * 3;
+        character.GetComponent<ScrMomentum>().speed = realVel.value * 1;
         diff = maxVel.value - minVel.value;
     }
 }

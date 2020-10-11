@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ScrMomentum : MonoBehaviour
 {
-    public float speed;
+   public float speed = 1;
 
     // Start is called before the first frame update
     void Start()
@@ -13,8 +13,8 @@ public class ScrMomentum : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        this.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z + speed / 10);
+        this.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z + speed);
     }
 }

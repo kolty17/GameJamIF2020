@@ -23,7 +23,6 @@ public class ScrHitLaser : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            Debug.Log(other.gameObject.GetComponent<ScrGameController>().diff);
             if (other.gameObject.GetComponent<ScrGameController>().diff < minVelocita)
             {
                 SceneManager.LoadScene("LvGameOver", LoadSceneMode.Single);

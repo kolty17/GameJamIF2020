@@ -36,7 +36,7 @@ public class ScrNubeProbabilistica : MonoBehaviour
         {
             if (position == 0)
             {
-                transform.position = new Vector3(-7, transform.position.y, transform.position.z);
+                transform.position = new Vector3(-9, transform.position.y, transform.position.z);
                 position = -1;
             }
             if (position == 1)
@@ -49,7 +49,7 @@ public class ScrNubeProbabilistica : MonoBehaviour
         {
             if (position == 0)
             {
-                transform.position = new Vector3(7, transform.position.y, transform.position.z);
+                transform.position = new Vector3(9, transform.position.y, transform.position.z);
                 position = 1;
             }
             if (position == -1)
